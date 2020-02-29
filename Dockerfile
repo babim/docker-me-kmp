@@ -3,6 +3,7 @@ ENV SOFT	KeyManager
 ENV EDITTION	pro
 ENV SOFT_HOME	/opt/ManageEngine/${SOFT}
 ENV FIXED	true
+ENV MANUAL	true
 
 # download option
 RUN yum install curl -y && \
@@ -19,4 +20,5 @@ VOLUME ["${SOFT_HOME}"]
 # Expose default HTTP connector port.
 EXPOSE 6565
 
+CMD ["/usr/sbin/init"]
 ENTRYPOINT ["/docker-entrypoint.sh"]
