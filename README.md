@@ -7,7 +7,7 @@ docker run --detach --publish 6565:6565 babim/kmp:latest
 ```
 ```
 volume:
-/opt/ManageEngine/KeyManager
+/opt/ManageEngine
 port:
 6565
 ```
